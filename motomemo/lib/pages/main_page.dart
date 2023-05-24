@@ -37,18 +37,21 @@ class _MileageCountState extends State<MileageCount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('MotoMemo')),
+      appBar: AppBar(title:const Text('MotoMemo')),
       body: Column(
         children: [
+          const SizedBox(
+            height: 60,
+          ),
           Center(
               child: Column(children: [
-            Text('現在の走行距離'),
+            const Text('現在の走行距離'),
             Text(
               "${_count}km",
-              style: TextStyle(fontSize: 30),
+              style: const TextStyle(fontSize: 30),
             )
           ])),
-          Text('test'),
+          const Text('test'),
         ],
       ),
       floatingActionButton: FloatingActionButton(
